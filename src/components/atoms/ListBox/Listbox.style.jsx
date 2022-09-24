@@ -14,7 +14,7 @@ export const StyledOption = styled.li`
     justify-between
     text-white
   `}
-  ${({ isFocused }) => isFocused && tw`bg-red-500`}
+  ${({ isFocused }) => isFocused && tw`bg-red-600`}
   ${({ isSelected }) => isSelected && tw`font-bold`}
   ${(p) => {
     if (p.isFocused || p.isSelected) {
