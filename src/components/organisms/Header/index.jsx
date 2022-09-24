@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { BsXLg } from 'react-icons/bs';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import Brand from '@/components/atoms/Brand';
 import NavList, { MobileNavList } from '@/components/atoms/NavList';
@@ -34,7 +35,13 @@ const Header = () => {
         className="hamburger-menu"
         onClick={() => setShowMobileNavbar(!showMobileNavbar)}
       >
-        <AiOutlineMenu />
+        {
+          showMobileNavbar
+            ? (
+              <BsXLg />
+            )
+            : <AiOutlineMenu />
+        }
       </Button>
       {
         showMobileNavbar && (
