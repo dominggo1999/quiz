@@ -7,11 +7,12 @@ export const StyledButton = styled.button`
     bg-red-500
     hover:bg-red-400
     rounded-sm
-    text-white 
+    text-blue-700
     self-start
     flex
     items-center
     gap-x-3
+    font-medium
   `}
 
   ${(p) => {
