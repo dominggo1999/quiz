@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { StyledButton } from './Button.style';
+import { isValidUrl } from '@/util/isValidUrl';
 
 const Button = ({
   disableLinkNavigation,
@@ -15,8 +16,9 @@ const Button = ({
   ...restProps
 }) => {
   const handleClick = (e) => {
-    if (isLink && disableLinkNavigation) {
-      e.preventDefault();
+    e.preventDefault();
+    if (isValidUrl(to)) {
+      window.open(to, '_blank');
     }
 
     onClick();
