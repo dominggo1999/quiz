@@ -13,7 +13,7 @@ export const SelectLabel = styled.span`
     font-medium 
     text-lg
     mb-2
-    text-red-500
+    text-red-600
   `}
 `;
 
@@ -41,13 +41,13 @@ export const SelectTrigger = styled.button`
   `}
   &[aria-expanded="true"], &:focus {
     ${tw`
-      border-red-500
+      border-red-600
     `}
   }
   &[aria-expanded="true"] ${SelectTriggerIcon}, 
   &:focus ${SelectTriggerIcon}{
     ${tw`
-      text-red-500
+      text-red-600
     `}
   }
 `;

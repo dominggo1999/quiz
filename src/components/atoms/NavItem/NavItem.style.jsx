@@ -4,12 +4,12 @@ export const StyledNavItem = styled.li`
   ${tw`
     text-white
     list-none
-    hover:text-red-500
+    hover:text-red-600
   `}
 
   .active{
     ${tw`
-      text-red-500
+      text-red-600
     `}
   }
 `;

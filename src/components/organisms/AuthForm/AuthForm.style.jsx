@@ -16,7 +16,7 @@ export const FormTitle = styled.h1`
     text-3xl
     sm:text-4xl
     font-extrabold
-    text-red-500
+    text-red-600
   `}
 `;
 

@@ -21,7 +21,7 @@ export const StyledOption = styled.li`
       if (p.isFocused) {
         return tw`text-white`;
       }
-      return tw`text-red-500`;
+      return tw`text-red-600`;
     } if (p.isDisabled) {
       return tw`text-gray-200`;
     }

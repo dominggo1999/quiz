@@ -5,7 +5,7 @@ export const StyledBrand = styled(Link)`
   ${tw`
     text-4xl 
     font-bold
-    text-red-500
+    text-red-600
     font-display
   `}
 `;

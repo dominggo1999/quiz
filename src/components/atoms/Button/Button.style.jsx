@@ -4,8 +4,8 @@ export const StyledButton = styled.button`
   ${tw`
     px-5
     md:px-6
-    bg-red-500
-    hover:bg-red-400
+    bg-red-600
+    hover:bg-red-500
     rounded-sm
     text-blue-700
     self-start

@@ -16,7 +16,7 @@ export const TextContent = styled.div`
 
 export const Title = styled.h1`
   ${tw`
-    text-red-500
+    text-red-600
     text-4xl  
     lg:text-5xl
     font-bold
