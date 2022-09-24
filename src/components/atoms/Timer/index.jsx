@@ -25,7 +25,7 @@ const Timer = () => {
     expiryTimestamp: (new Date()).getTime() + timeLimit,
     onExpire: () => {
       saveResult(user?.uid);
-      navigate('/show-score');
+      navigate('/final-score');
     },
   });
 

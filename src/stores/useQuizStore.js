@@ -3,7 +3,7 @@ import produce from 'immer';
 import short from 'short-uuid';
 import { saveQuiz, removeQuizSession, saveRemainingTime } from '@/services/quizzes';
 
-const TIME_LIMIT = 10; // Seconds
+const TIME_LIMIT = 100; // Seconds
 
 const initialQuiz = {
   waitingForConfirmation: false,
