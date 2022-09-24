@@ -2,6 +2,7 @@ import React, { useState, useLayoutEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BsXLg } from 'react-icons/bs';
 import useWindowSize from 'react-use/lib/useWindowSize';
+import { useLocation } from 'react-router-dom';
 import Brand from '@/components/atoms/Brand';
 import NavList, { MobileNavList } from '@/components/atoms/NavList';
 import NavItem from '@/components/atoms/NavItem';
@@ -14,6 +15,7 @@ const Header = () => {
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
   const { logout } = useAuth();
   const { width } = useWindowSize();
+  const { pathname } = useLocation();
 
   useLayoutEffect(() => {
     // Close mobile navbar on larger screen
@@ -21,6 +23,10 @@ const Header = () => {
       setShowMobileNavbar(false);
     }
   }, [width]);
+
+  useLayoutEffect(() => {
+    setShowMobileNavbar(false);
+  }, [pathname]);
 
   return (
     <HeaderWrapper>
