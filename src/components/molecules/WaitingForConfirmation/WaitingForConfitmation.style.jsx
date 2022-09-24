@@ -9,8 +9,18 @@ export const ConfirmationContainer = styled.div`
     max-w-[24rem]
     mx-auto
     text-center
-    py-20
+    py-10
   `}
+
+  img{
+    ${tw`
+      max-w-full
+      w-full
+      mb-6
+    `}
+
+    aspect-ratio : 1/1;
+  }
 `;
 
 export const ConfirmationMessage = styled.div`

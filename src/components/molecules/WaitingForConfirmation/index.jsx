@@ -14,6 +14,10 @@ const WaitingForConfirmation = ({
   return (
     <Wrapper direction="col">
       <ConfirmationContainer>
+        <img
+          src="https://i.giphy.com/media/xT39Db8zIOODTppk08/giphy.webp"
+          alt="Are you ready?"
+        />
         <ConfirmationMessage>
           {message}
         </ConfirmationMessage>
