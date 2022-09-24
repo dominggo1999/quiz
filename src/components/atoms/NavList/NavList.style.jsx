@@ -26,5 +26,7 @@ export const StyledMobileNavList = styled.ul`
     px-4
     gap-y-4
     py-3
+    bg-blue-700 
+    z-50
   `}
 `;
