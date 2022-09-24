@@ -3,7 +3,7 @@ import Brand from '@/components/atoms/Brand';
 import NavList from '@/components/atoms/NavList';
 import NavItem from '@/components/atoms/NavItem';
 import Button from '@/components/atoms/Button';
-import Wrapper from '@/components/atoms/Wrapper';
+import { HeaderWrapper } from './Header.style';
 
 import { useAuth } from '@/context/AuthProvider';
 
@@ -11,7 +11,7 @@ const Header = () => {
   const { logout } = useAuth();
 
   return (
-    <Wrapper as="header">
+    <HeaderWrapper>
       <Brand />
       <NavList>
         <NavItem to="/start-quiz">Start A Quiz</NavItem>
@@ -19,7 +19,7 @@ const Header = () => {
         <NavItem to="/paused">Paused</NavItem>
         <Button onClick={logout}>Logout</Button>
       </NavList>
-    </Wrapper>
+    </HeaderWrapper>
   );
 };
 

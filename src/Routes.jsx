@@ -7,7 +7,10 @@ import StartQuiz from './pages/StartQuiz';
 import Quiz from './pages/Quiz';
 import FinalScore from './pages/FinalScore';
 import Paused from './pages/Paused';
+import Finished from './pages/Finished';
 import ProtectedRoute from './components/particles/ProtectedRoute';
+
+import Header from './components/organisms/Header';
 
 const routes = [
   {
@@ -21,6 +24,11 @@ const routes = [
   {
     path: '/start-quiz',
     element: StartQuiz,
+    isProtected: true,
+  },
+  {
+    path: '/finished',
+    element: Finished,
     isProtected: true,
   },
   {
@@ -52,7 +60,9 @@ const Routes = () => {
               element={isProtected
                 ? (
                   <ProtectedRoute>
-                    <Element />
+                    <Header>
+                      <Element />
+                    </Header>
                   </ProtectedRoute>
                 )
                 : <Element />}
