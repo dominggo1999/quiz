@@ -4,6 +4,7 @@ export const StyledWrapper = styled.div`
   ${tw` 
     max-w-container
     mx-auto
+    px-4
   `}
 
   ${({ direction }) => {

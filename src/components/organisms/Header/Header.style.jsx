@@ -7,5 +7,6 @@ export const HeaderWrapper = styled.header`
     max-w-container
     mx-auto
     py-7
+    px-4
   `}
 `;
