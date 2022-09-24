@@ -21,6 +21,7 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.0.2",
     "react-stately": "^3.17.0",
+    "react-timer-hook": "^3.0.5",
     "react-use": "^17.4.0",
     "short-uuid": "^4.2.0",
     "styled-components": "^5.3.5",
