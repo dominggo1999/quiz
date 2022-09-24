@@ -3,7 +3,7 @@ import produce from 'immer';
 import short from 'short-uuid';
 import { saveQuiz, removeQuizSession, saveRemainingTime } from '@/services/quizzes';
 
-const TIME_LIMIT = 100; // Seconds
+const TIME_LIMIT = 60; // Seconds
 
 const initialQuiz = {
   waitingForConfirmation: false,
@@ -42,6 +42,7 @@ const useQuizStore = create((set, get) => {
       answered: newSessionId ? 0 : answered + 1,
       remainingTime,
       sessionId: newSessionId || oldSessionId,
+      savedDate: new Date(),
     }, 'paused');
   };
 
@@ -116,14 +117,19 @@ const useQuizStore = create((set, get) => {
         answered,
         userId,
         currentQuestionIndex,
+        sessionId,
+        remainingTime,
       } = get();
 
       saveQuiz(userId, {
         questions,
         correct,
+        sessionId,
+        savedDate: new Date(),
         // "Save result" happens on the previous value
         // Need to add the last counter
         answered: answered ? answered + 1 : 0,
+        remainingTime,
       }, 'results');
 
       if (currentQuestionIndex === questions.length - 1) {

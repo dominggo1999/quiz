@@ -122,5 +122,16 @@ export const saveRemainingTime = (userId, newRemainingTime) => {
 };
 
 export const getSavedQuizzes = (userId, type) => {
-  return JSON.parse(window.localStorage.getItem(userId))[type];
+  let savedInfo = JSON.parse(window.localStorage.getItem(userId));
+
+  // Init localstorage if currently not exist
+  if (!savedInfo) {
+    savedInfo = {
+      paused: [],
+      results: [],
+    };
+    window.localStorage.setItem(userId, JSON.stringify(savedInfo));
+  }
+
+  return savedInfo[type];
 };
