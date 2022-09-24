@@ -5,6 +5,7 @@ import useQuizStore from '@/stores/useQuizStore';
 import RedirectedOnly from '@/components/particles/RedirectedOnly';
 import WaitingForConfirmation from '@/components/molecules/WaitingForConfirmation';
 import LoadingIndicator from '@/components/atoms/LoadingIndicator';
+import QuizItem from '@/components/organisms/QuizItem';
 
 const {
   askForConfirmation,
@@ -54,11 +55,7 @@ const ProtectedQuiz = () => {
     );
   }
 
-  return (
-    <div>
-      <button onClick={clearQuiz}>Exit Quiz</button>
-    </div>
-  );
+  return <QuizItem />;
 };
 
 const Quiz = () => {

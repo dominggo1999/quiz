@@ -3,8 +3,13 @@ import { IoMdArrowBack } from 'react-icons/io';
 import Button from '@/components/atoms/Button';
 import Timer from '@/components/atoms/Timer';
 import { HeaderWrapper } from './QuizHeader.style';
+import useQuizStore from '@/stores/useQuizStore';
 
-const QuizHeader = ({ clearQuiz = () => { } }) => {
+const {
+  clearQuiz,
+} = useQuizStore.getState();
+
+const QuizHeader = () => {
   return (
     <HeaderWrapper>
       <Timer />
