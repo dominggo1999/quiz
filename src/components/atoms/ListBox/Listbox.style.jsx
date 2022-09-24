@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 
 export const StyledOption = styled.li`
   ${tw`
-    m-1
+    mx-1
     rounded-md
     py-2
     px-2
@@ -40,5 +40,6 @@ export const StyledList = styled.ul`
     outline-none
     overflow-auto 
     max-h-[20rem]
+    py-1
   `}
 `;
