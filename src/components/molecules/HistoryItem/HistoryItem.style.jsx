@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 
 export const HistoryItemContainer = styled.div`
   ${tw`
-    bg-[#232148]
+    bg-blue-400
     rounded-sm 
     p-4
     w-full

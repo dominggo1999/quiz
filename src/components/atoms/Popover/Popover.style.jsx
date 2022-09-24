@@ -8,8 +8,8 @@ export const PopoverWrapper = styled.div`
     w-full
     shadow-lg
     border
-    border-[#232148]
-    bg-[#232148]
+    border-blue-400
+    bg-blue-400
     rounded-md
     mt-2
   `}

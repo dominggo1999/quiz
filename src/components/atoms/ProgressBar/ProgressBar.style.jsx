@@ -6,7 +6,7 @@ export const Bar = styled.div`
     relative
     rounded-full 
     overflow-hidden 
-    bg-[#232148]
+    bg-blue-400
     h-2
   `}
 `;
