@@ -6,7 +6,15 @@ const CustomStyles = createGlobalStyle`
   body {
     ${tw`
       antialiased
+      bg-blue-700
+      font-primary
     `}
+
+    h1,h2,h3,h4,h5,h6 {
+      ${tw`
+        font-display
+      `}
+    }
   }
 `;
 

@@ -2,8 +2,9 @@ import tw, { styled } from 'twin.macro';
 
 export const StyledButton = styled.button`
   ${tw`
-    px-3 
-    bg-blue-500
+    px-6
+    bg-red-500
+    hover:bg-red-400
     rounded-sm
     text-white 
     self-start
@@ -23,7 +24,15 @@ export const StyledButton = styled.button`
     }
   }}
 
-  ${(p) => (p.$isCallToAction ? tw`py-3` : tw`py-1`)}
+  ${(p) => (p.$isCallToAction ? tw`py-4 text-lg` : tw`py-2`)}
   
   ${(p) => p.$isFullWidth && tw`w-full justify-center`}
+
+
+  /* Icon */
+  svg{
+    ${tw`
+      text-xl
+    `}
+  }
 `;
