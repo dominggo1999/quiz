@@ -3,7 +3,7 @@ import { BsGoogle } from 'react-icons/bs';
 import { FormWrapper, FormTitle, FormDescription } from './AuthForm.style';
 import Button from '@/components/atoms/Button';
 
-const AuthForm = ({ register = () => { }, buttonText = 'Login With Google' }) => {
+const AuthForm = ({ register = () => { }, buttonText = 'Login' }) => {
   return (
     <FormWrapper>
       <FormTitle>

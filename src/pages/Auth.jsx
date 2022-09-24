@@ -1,16 +1,20 @@
 import React from 'react';
 import { useAuth } from '@/context/AuthProvider';
 import LoadingIndicator from '@/components/atoms/LoadingIndicator';
+import AuthForm from '@/components/organisms/AuthForm';
 
 const Auth = () => {
-  const { loading } = useAuth();
+  const { loading, signInWithGoogle } = useAuth();
 
   if (loading) {
     return <LoadingIndicator />;
   }
 
   return (
-    <div>Auth</div>
+    <AuthForm
+      register={signInWithGoogle}
+      buttonText="Login With Google"
+    />
   );
 };
 
