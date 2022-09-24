@@ -14,7 +14,7 @@ const Score = ({ info }) => {
   const scorePercentage = correct / questions.length;
   const isConfetti = scorePercentage > 0.3;
   let imgSrc;
-  if (scorePercentage > 0.7) {
+  if (scorePercentage > 0.5) {
     imgSrc = 'https://c.tenor.com/xDHCe07zrocAAAAC/congrats-minions.gif';
   } else if (scorePercentage > 0.3) {
     imgSrc = 'https://c.tenor.com/AhvkowDENcMAAAAC/nice-its-okay.gif';

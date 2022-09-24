@@ -2,7 +2,6 @@ import React, { useMemo, useEffect } from 'react';
 
 import RedirectedOnly from '../components/particles/RedirectedOnly';
 import useQuizStore from '../stores/useQuizStore';
-import Confetti from '../components/atoms/Confetti';
 import Score from '@/components/molecules/Score';
 
 const {
