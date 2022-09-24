@@ -22,7 +22,7 @@ export const HistoryItemContainer = styled.div`
 
 export const SavedTime = styled.span`
   ${tw`
-    text-red-500
+    text-red-600
     inline-flex
     text-lg 
     font-semibold 
