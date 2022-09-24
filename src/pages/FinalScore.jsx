@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useMemo, useEffect } from 'react';
+
+import RedirectedOnly from '../components/particles/RedirectedOnly';
+import useQuizStore from '../stores/useQuizStore';
+import Confetti from '../components/atoms/Confetti';
+import Score from '@/components/molecules/Score';
+
+const {
+  clearQuiz,
+} = useQuizStore.getState();
 
 const FinalScore = () => {
+  const { isStarting, ...quizInfo } = useQuizStore.getState();
+
+  const quizInfoMemo = useMemo(() => {
+    return { ...quizInfo };
+  }, []);
+
+  useEffect(() => {
+    clearQuiz();
+  }, []);
+
   return (
-    <div>FinalScore</div>
+    <RedirectedOnly redirected={isStarting}>
+      <Score info={quizInfoMemo} />
+    </RedirectedOnly>
   );
 };
 
