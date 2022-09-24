@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 
-export const StyledChoiceItem = styled.div`
+export const StyledChoiceItem = styled.li`
   ${tw`
     w-full
     list-none
