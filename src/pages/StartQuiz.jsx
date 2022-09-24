@@ -1,8 +1,17 @@
 import React from 'react';
+import QuizOptions from '@/components/organisms/QuizOptions';
+import quizData from '@/data/quiz';
 
 const StartQuiz = () => {
   return (
-    <div>StartQuiz</div>
+    <QuizOptions
+      fields={quizData}
+      startQuiz={
+        (options) => {
+          console.log(options);
+        }
+      }
+    />
   );
 };
 

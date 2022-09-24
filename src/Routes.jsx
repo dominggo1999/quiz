@@ -60,9 +60,8 @@ const Routes = () => {
               element={isProtected
                 ? (
                   <ProtectedRoute>
-                    <Header>
-                      <Element />
-                    </Header>
+                    <Header />
+                    <Element />
                   </ProtectedRoute>
                 )
                 : <Element />}
