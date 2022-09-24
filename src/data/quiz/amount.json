@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Rookie (5)",
+    "value": "5"
+  },
+  {
+    "label": "Intermediate (10)",
+    "value": "10"
+  },
+  {
+    "label": "Pro (15)",
+    "value": "15"
+  },
+  {
+    "label": "Expert (20)",
+    "value": "20"
+  }
+]

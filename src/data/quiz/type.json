@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Any Type",
+    "value": "any"
+  },
+  {
+    "label": "Multiple Choices",
+    "value": "multiple"
+  },
+  {
+    "label": "True/False",
+    "value": "boolean"
+  }
+]
