@@ -31,6 +31,7 @@ const Header = () => {
         <NavItem to="/paused">Paused</NavItem>
         <Button onClick={logout}>Logout</Button>
       </NavList>
+      {/* Hamburger icon */}
       <Button
         className="hamburger-menu"
         onClick={() => setShowMobileNavbar(!showMobileNavbar)}
