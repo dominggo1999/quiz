@@ -7,6 +7,14 @@ export const HeaderWrapper = styled.header`
     max-w-container
     mx-auto
     py-7
-    px-4
+    px-4 
+    relative
+    justify-between
   `}
+
+  .hamburger-menu{
+    ${tw`
+      md:hidden
+    `}
+  }
 `;
