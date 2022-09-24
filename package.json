@@ -7,7 +7,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.5.0",
+    "@tanstack/react-query-devtools": "^4.5.0",
     "firebase": "^9.10.0",
+    "html-entities": "^2.3.3",
     "immer": "^9.0.12",
     "react": "^17.0.2",
     "react-aria": "^3.19.0",

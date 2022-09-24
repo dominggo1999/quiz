@@ -35,6 +35,7 @@ const routes = [
     path: '/quiz',
     element: Quiz,
     isProtected: true,
+    hideHeader: true,
   },
   {
     path: '/final-score',
@@ -52,7 +53,9 @@ const Routes = () => {
   return (
     <ReactRouterRoutes>
       {
-        routes?.length > 0 && routes.map(({ isProtected, path, element: Element }) => {
+        routes?.length > 0 && routes.map(({
+          isProtected, path, element: Element, hideHeader,
+        }) => {
           return (
             <Route
               key={path}
@@ -60,7 +63,7 @@ const Routes = () => {
               element={isProtected
                 ? (
                   <ProtectedRoute>
-                    <Header />
+                    {!hideHeader && <Header />}
                     <Element />
                   </ProtectedRoute>
                 )
