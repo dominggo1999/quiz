@@ -8,5 +8,6 @@ export const QuizItemWrapper = styled.div`
     flex-col 
     gap-y-6
     mx-auto
+    px-4
   `}
 `;

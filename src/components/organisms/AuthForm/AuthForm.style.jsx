@@ -8,6 +8,7 @@ export const FormWrapper = styled.div`
     mx-auto
     gap-y-3
     mt-20
+    px-4
   `}
 `;
 
