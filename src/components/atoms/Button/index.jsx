@@ -16,8 +16,8 @@ const Button = ({
   ...restProps
 }) => {
   const handleClick = (e) => {
-    e.preventDefault();
     if (isValidUrl(to)) {
+      e.preventDefault();
       window.open(to, '_blank');
     }
 
