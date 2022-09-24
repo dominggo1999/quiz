@@ -8,7 +8,7 @@ const fields = [
     label: 'Number of Questions',
     options: amount,
     key: 'amount',
-    defaultValue: 10,
+    defaultValue: '10',
   },
   {
     label: 'Select Category',
