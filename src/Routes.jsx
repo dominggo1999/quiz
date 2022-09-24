@@ -7,6 +7,7 @@ import StartQuiz from './pages/StartQuiz';
 import Quiz from './pages/Quiz';
 import FinalScore from './pages/FinalScore';
 import Paused from './pages/Paused';
+import ProtectedRoute from './components/particles/ProtectedRoute';
 
 const routes = [
   {
@@ -48,7 +49,13 @@ const Routes = () => {
             <Route
               key={path}
               path={path}
-              element={<Element />}
+              element={isProtected
+                ? (
+                  <ProtectedRoute>
+                    <Element />
+                  </ProtectedRoute>
+                )
+                : <Element />}
             />
           );
         })
