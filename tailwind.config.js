@@ -34,6 +34,9 @@ module.exports = {
         primary: ['Inter', 'sans-serif'],
         display: ['Red Hat Display', 'sans-serif'],
       },
+      maxWidth: {
+        container: '64rem',
+      },
     },
   },
   plugins: [],
