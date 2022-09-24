@@ -6,7 +6,12 @@ const ProtectedRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
 
   if (!user && !loading) {
-    return <Navigate to="/auth" />;
+    return (
+      <Navigate
+        to="/auth"
+        replace
+      />
+    );
   }
 
   return children;
