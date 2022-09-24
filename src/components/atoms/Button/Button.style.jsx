@@ -2,7 +2,8 @@ import tw, { styled } from 'twin.macro';
 
 export const StyledButton = styled.button`
   ${tw`
-    px-6
+    px-5
+    md:px-6
     bg-red-500
     hover:bg-red-400
     rounded-sm
@@ -24,7 +25,7 @@ export const StyledButton = styled.button`
     }
   }}
 
-  ${(p) => (p.$isCallToAction ? tw`py-4 text-lg` : tw`py-2`)}
+  ${(p) => (p.$isCallToAction ? tw`py-3 md:(py-4 text-lg)` : tw`py-2`)}
   
   ${(p) => p.$isFullWidth && tw`w-full justify-center`}
 

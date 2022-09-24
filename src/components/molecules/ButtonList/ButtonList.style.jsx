@@ -2,8 +2,9 @@ import tw, { styled } from 'twin.macro';
 
 export const List = styled.div`
   ${tw`
-    flex 
-    gap-x-3
+    flex
+    flex-wrap 
+    gap-3
     mt-3
   `}
 `;
