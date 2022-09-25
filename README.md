@@ -1,3 +1,7 @@
+See live : [http://quiz-w9nd.vercel.app/](http://quiz-w9nd.vercel.app/)
+
+![Demo Gif](/public/demo.gif?raw=true "Demo Gif")
+
 Install all dependencies :
 ```
   npm install
