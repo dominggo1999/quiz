@@ -31,6 +31,15 @@ export const StyledButton = styled.button`
   ${(p) => p.$isFullWidth && tw`w-full justify-center`}
 
 
+  ${(p) => {
+    switch (p.$type) {
+      case 'cancel':
+        return tw`bg-blue-400 text-white hover:text-blue-600`;
+      default:
+        break;
+    }
+  }}
+
   /* Icon */
   svg{
     ${tw`

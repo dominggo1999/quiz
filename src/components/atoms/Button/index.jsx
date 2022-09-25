@@ -13,6 +13,7 @@ const Button = ({
   icon: Icon,
   iconPosition = 'right',
   isFullWidth = false,
+  type,
   ...restProps
 }) => {
   const handleClick = (e) => {
@@ -29,6 +30,7 @@ const Button = ({
       onClick={handleClick}
       as={isLink ? Link : 'button'}
       to={isLink ? to : null}
+      $type={type}
       $isCallToAction={isCallToAction}
       $iconPosition={iconPosition}
       $isFullWidth={isFullWidth}
