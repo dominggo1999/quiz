@@ -38,7 +38,7 @@ const Score = ({ info }) => {
         <div>
           <ScoreLabel>Answered</ScoreLabel>
           <ScoreValue>
-            {answered}
+            {answered} / {questions.length}
           </ScoreValue>
         </div>
 
