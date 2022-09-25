@@ -83,8 +83,8 @@ const useQuizStore = create((set, get) => {
         draft.sessionId = draft.sessionId || newSessionId;
       }));
     },
-    clearQuiz: () => {
-      if (!get().isResume) {
+    clearQuiz: ({ force = false }) => {
+      if (!get().isResume || force) {
         removeQuizSession(get().userId);
       }
 

@@ -16,7 +16,7 @@ const FinalScore = () => {
   }, []);
 
   useEffect(() => {
-    clearQuiz();
+    clearQuiz({ force: true });
   }, []);
 
   return (
