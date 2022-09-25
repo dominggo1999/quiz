@@ -7,6 +7,7 @@ import Button from '@/components/atoms/Button';
 import { QuizOptionsWrapper, QuizOptionsForm } from './QuizOptions.style';
 
 const QuizOptions = ({ fields = [], startQuiz = () => { } }) => {
+  const renderedTime = (new Date()).getTime();
   // Find all the default values
   const keys = {};
   fields.forEach((i) => {
@@ -52,7 +53,13 @@ const QuizOptions = ({ fields = [], startQuiz = () => { } }) => {
         }
         <Button
           isFullWidth
-          onClick={() => startQuiz(filter)}
+          onClick={(e) => {
+            if ((new Date()).getTime() - renderedTime < 50) {
+              return;
+            }
+
+            startQuiz(filter);
+          }}
           isCallToAction
           icon={IoIosRocket}
           iconPosition="left"
