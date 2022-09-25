@@ -21,7 +21,7 @@ const Button = ({
       window.open(to, '_blank');
     }
 
-    onClick();
+    onClick(e);
   };
 
   return (
