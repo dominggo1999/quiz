@@ -13,8 +13,8 @@ const LandingPage = () => {
         }
       }
       heroImage="/demo.gif"
-      title="The best quiz app in the world"
-      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nulla saepe soluta aliquid qui possimus quisquam vitae odio? Neque, dolor."
+      title="Just another fun quiz app"
+      description="Learn more about movies, sports, music, and more with our fun quizzes"
       actions={[{
         to: 'https://github.com/dominggo1999/quiz',
         label: 'Source Code',
