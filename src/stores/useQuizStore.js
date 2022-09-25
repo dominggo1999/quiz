@@ -84,7 +84,9 @@ const useQuizStore = create((set, get) => {
       }));
     },
     clearQuiz: () => {
-      removeQuizSession(get().userId);
+      if (!get().isResume) {
+        removeQuizSession(get().userId);
+      }
 
       return set(produce((draft) => {
         Object.keys(initialQuiz).forEach((key) => {
