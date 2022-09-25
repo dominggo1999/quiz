@@ -34,18 +34,25 @@ const Score = ({ info }) => {
           src={imgSrc}
           alt="congrats"
         />
-        <div>
-
-          <ScoreLabel>Your Score</ScoreLabel>
-          <ScoreValue>
-            {correct} / {questions.length}
-          </ScoreValue>
-        </div>
 
         <div>
           <ScoreLabel>Answered</ScoreLabel>
           <ScoreValue>
             {answered}
+          </ScoreValue>
+        </div>
+
+        <div>
+          <ScoreLabel>Correct</ScoreLabel>
+          <ScoreValue>
+            {correct}
+          </ScoreValue>
+        </div>
+
+        <div>
+          <ScoreLabel>Incorrect</ScoreLabel>
+          <ScoreValue>
+            {answered - correct}
           </ScoreValue>
         </div>
 
