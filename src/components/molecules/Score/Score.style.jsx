@@ -37,6 +37,6 @@ export const ScoreValue = styled.span`
   ${tw`
     font-semibold
     text-3xl
-    text-red-500
+    text-red-600
   `}
 `;
