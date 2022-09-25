@@ -40,6 +40,7 @@ export const StyledButton = styled.button`
     }
   }}
 
+
   /* Icon */
   svg{
     ${tw`

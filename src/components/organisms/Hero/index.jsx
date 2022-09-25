@@ -25,11 +25,14 @@ const Hero = ({
     icon: IoMdPlay,
     iconPosition: 'left',
   }],
+  heroImageSize,
 }) => {
   return (
     <Wrapper>
       <HeroContainer>
         <Image
+          width={heroImageSize.width}
+          height={heroImageSize.height}
           src={heroImage}
           alt="hero"
         />

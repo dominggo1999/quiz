@@ -6,6 +6,12 @@ import Hero from '@/components/organisms/Hero';
 const LandingPage = () => {
   return (
     <Hero
+      heroImageSize={
+        {
+          width: 1359,
+          height: 654,
+        }
+      }
       heroImage="/demo.gif"
       title="The best quiz app in the world"
       description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nulla saepe soluta aliquid qui possimus quisquam vitae odio? Neque, dolor."
